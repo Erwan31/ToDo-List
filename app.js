@@ -170,7 +170,7 @@ function removeLocalTodos( todo ) {
         todos = JSON.parse( localStorage.getItem('todos'));
     }
 
-    //Get Index of the item, retrieve from array and push again
+    //Get Index of the item, retrieve from array and push all todos again
     const todoIndex = todos.indexOf(todo.children[0].innerText);
     todos.splice( todoIndex, 1);
     localStorage.setItem('todos', JSON.stringify(todos));
